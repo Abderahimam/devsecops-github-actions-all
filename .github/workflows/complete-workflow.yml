@@ -1,10 +1,12 @@
 name: Build code, run unit test, run SAST, SCA, DAST security scans.
+
+
 on: push
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Run unit tests and SAST scan on the source code 
+    name: Run unit tests and SAST scan on the source code to test it 
     steps:
     - uses: actions/checkout@v4
     - name: Set up JDK 21
